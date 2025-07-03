@@ -9,16 +9,16 @@ const AuthGuard = ({ children }: { children: React.ReactNode }) => {
 
   const { data, loading, error } = useQuery(GET_USER);
 
-  const user = data?.me;
+  // const user = data?.me;
 
   useEffect(() => {
-    if (!loading && (!user || error)) {
+    if (!loading && (!data?.me || error)) {
       router.replace("/pages/signin");
     }
-  }, [loading, error, user, router]);
+  }, [loading, error, data?.me, router]);
 
   if (loading) return null;
-  return user ? <>{children}</> : null;
+  return data?.me ? <>{children}</> : null;
 };
 
 export default AuthGuard;
