@@ -4,7 +4,9 @@ const productType = `
     title: String!
     price: Float!
     quantity: Int!
+    image:String
     description:String
+    user: User!
   }
 
   type Query{
@@ -22,6 +24,7 @@ const productType = `
     title: String!
     price: Float!
     quantity: Int!
+    image:String
     description:String
   }
 
@@ -29,6 +32,7 @@ const productType = `
     title: String!
     price: Float!
     quantity: Int!
+    image:String
     description:String
   }
 

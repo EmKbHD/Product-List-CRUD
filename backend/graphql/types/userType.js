@@ -4,6 +4,8 @@ const userType = `
     firstName: String!
     lastName: String!
     email: String!
+    product: [Product]
+
   }
 
   input SignUpInput {
