@@ -10,8 +10,8 @@ const ProductDialog = () => {
           <Dialog.Header>
             <Dialog.Title color={"black"}>Add Product Form</Dialog.Title>
           </Dialog.Header>
-          {/* body of the Form Dialog start here */}
           <Dialog.Body>
+            {/* body of the Add Product Form Dialog start here */}
             <AddProductForm />
           </Dialog.Body>
           <Dialog.CloseTrigger asChild>

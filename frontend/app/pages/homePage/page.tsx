@@ -32,7 +32,7 @@ const HomePage = () => {
             color: "black",
           }}
         >
-          <Text fontSize="3xl">Product App</Text>
+          <Text fontSize="3xl">App</Text>
         </Link>
         <Box display={"flex"} alignItems="center" gap="1rem">
           <Text>{user?.firstName || "User"}</Text>

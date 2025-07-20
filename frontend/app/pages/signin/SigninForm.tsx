@@ -1,5 +1,9 @@
 "use client";
 import { Input, Grid, Button, Field, Box, Text, Flex } from "@chakra-ui/react";
+import {
+  PasswordInput,
+  // PasswordStrengthMeter,
+} from "@/components/ui/password-input";
 import Link from "next/link";
 import { useFormik } from "formik";
 import * as Yup from "yup";
@@ -90,7 +94,7 @@ const SigninForm = () => {
         </Field.Root>
         <Field.Root py="1rem">
           <Field.Label>Password</Field.Label>
-          <Input
+          <PasswordInput
             value={formik.values.password}
             onChange={formik.handleChange}
             type="password"
