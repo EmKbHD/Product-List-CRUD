@@ -21,17 +21,11 @@ const eslintConfig = [
       "unused-imports": unusedImports, // 👈 Register plugin
     },
     rules: {
-      // 👇 Unused variables: warn only
-      "no-unused-vars": [
+      "no-unused-vars": "warn",
+      "@typescript-eslint/no-unused-vars": [
         "warn",
-        {
-          vars: "all",
-          args: "after-used",
-          ignoreRestSiblings: true,
-        },
+        { vars: "all", args: "after-used", ignoreRestSiblings: true },
       ],
-
-      // 👇 Unused imports: warn only
       "unused-imports/no-unused-imports": "warn",
       "unused-imports/no-unused-vars": [
         "warn",
